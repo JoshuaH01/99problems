@@ -8,11 +8,13 @@ def lastElement(listA : List[Int]) : Int = {
   }
 
   /** Find the last but one element of a list **/
-  def secondLastElement(listB : List[Int]) : Option[Int] = {
-    listB.lift(7)
+  def secondLastElement(listB : List[Int]) : Int = {
+    listB.last - 1
   }
 
   /** Find the Kth element of a list **/
-  def kthElement(listC : List[Int]) = ???
+  def kthElement(listC : List[Int]) : Option[Int] = {
+    listC.lift(4)
+  }
 
 }

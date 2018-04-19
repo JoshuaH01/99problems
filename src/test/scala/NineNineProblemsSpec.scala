@@ -34,8 +34,14 @@ class NineNineProblemsSpec extends WordSpec with MustMatchers {
 
     "Reverse a list is called" should {
       "return a reversed list" in {
-        NineNineProblems.reverseList(List(1, 2, 3, 4, 5, 6, 7, 8, 9)) mustBe List(9,8,7,6,5,4,3,2,1)
+        NineNineProblems.reverseList(List(1, 2, 3, 4, 5, 6, 7, 8, 9)) mustBe List(9, 8, 7, 6, 5, 4, 3, 2, 1)
 
+      }
+    }
+
+    "palindromeList is called" should {
+      "return a list that is the same backwards" in {
+        NineNineProblems.reverseList(List(1,1,1,2,2,2,3,3,3,2,2,2,1,1,1)) mustBe List(1,1,1,2,2,2,3,3,3,2,2,2,1,1,1)
       }
     }
   }

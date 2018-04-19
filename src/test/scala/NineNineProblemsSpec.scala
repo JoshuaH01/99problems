@@ -24,5 +24,12 @@ class NineNineProblemsSpec extends WordSpec with MustMatchers {
 
       }
     }
+
+    "countList is called" should {
+      "return the size of the list" in {
+        NineNineProblems.countList(List(1, 2, 3, 4, 5, 6, 7, 8, 9)) mustBe 9
+
+      }
+    }
   }
 }

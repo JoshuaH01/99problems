@@ -17,4 +17,9 @@ def lastElement(listA : List[Int]) : Int = {
     listC.lift(4)
   }
 
+  /** Find the number of elements of a list. **/
+  def countList(listD : List[Int]) : Int = {
+    listD.length
+  }
+
 }

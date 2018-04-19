@@ -22,4 +22,8 @@ def lastElement(listA : List[Int]) : Int = {
     listD.length
   }
 
+  /** Reverse a list.**/
+  def reverseList(listE : List[Int]) : List[Int] = {
+    listE.reverse
+  }
 }

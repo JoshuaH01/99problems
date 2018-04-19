@@ -1,5 +1,6 @@
 import org.scalatest.{MustMatchers, WordSpec}
 
+
 class NineNineProblemsSpec extends WordSpec with MustMatchers {
 
 
@@ -44,5 +45,17 @@ class NineNineProblemsSpec extends WordSpec with MustMatchers {
         NineNineProblems.reverseList(List(1,1,1,2,2,2,3,3,3,2,2,2,1,1,1)) mustBe List(1,1,1,2,2,2,3,3,3,2,2,2,1,1,1)
       }
     }
+
+    "flattenList is called" should {
+      "return a flattened list " in {
+        NineNineProblems.flattenList(List(List(1, 1), 2, List(3, List(5, 8)))) mustBe List[Any](1, 1, 2, 3, 5, 8)
+      }
+    }
+
+/*    "eliminateDuplicates is called" should {
+      "return a list with no doubles" in {
+        NineNineProblems.eliminateDuplicates(List('a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd', 'e', 'e', 'e', 'e')) mustBe List('a', 'b', 'c', 'a', 'd', 'e')
+      }
+    }*/
   }
 }

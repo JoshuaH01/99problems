@@ -2,7 +2,6 @@ object NineNineProblems extends App {
 
   /** Find the last element of a list **/
 def lastElement(listA : List[Int]) : Int = {
-
   listA.last
 
   }
@@ -28,7 +27,21 @@ def lastElement(listA : List[Int]) : Int = {
   }
 
   /** Find out whether a list is a palindrome **/
-  def palindromeList(listE : List[Int]) : List[Int] = {
-    listE.reverse
+  def palindromeList(listF : List[Int]) : List[Int] = {
+    listF.reverse
   }
+
+  /** Flatten a nested list structure **/
+  def flattenList(listG : List[Any]) : List[Any] = {
+   listG match  {
+      case _: List[Any] =>
+      case _ =>
+    }
+  }
+
+
+  /** Eliminate consecutive duplicates of list elements **/
+  def eliminateDuplicates(listH: List[Char]) : List[Char] = ???
+
+
 }
